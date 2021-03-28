@@ -8,7 +8,7 @@ class CalculadoraCCCTest {
 	private Calculadora elemento;
 	private double peso;
 	private double raio;
-	private static double DELTA = 0.0000005;
+	private static double DELTA = 0.05;
 
 	@Test
 	public void testaResultadoNiobio() {
