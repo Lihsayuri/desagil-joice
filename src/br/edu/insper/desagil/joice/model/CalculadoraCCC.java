@@ -1,12 +1,10 @@
 package br.edu.insper.desagil.joice.model;
 import java.lang.Math;
 
-public class CalculadoraCCC extends Calculadora{
-	
-	public CalculadoraCCC(String nome) {
-		super(nome);
+public class CalculadoraCCC extends Calculadora{	
 
-		// TODO Auto-generated constructor stub
+	public CalculadoraCCC() {
+		super("CCC");
 	}
 
 	@Override

@@ -2,6 +2,7 @@ package br.edu.insper.desagil.joice.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CalculadoraCCCTest {
@@ -10,9 +11,14 @@ class CalculadoraCCCTest {
 	private double raio;
 	private static double DELTA = 0.05;
 
+	@BeforeEach
+	public void setUp() {
+		elemento = new CalculadoraCCC();
+	}
+	
+	
 	@Test
 	public void testaResultadoNiobio() {
-		elemento = new CalculadoraCCC("Níobio");
 		peso = 92.91;
 		raio = 0.143;
 		elemento.calcula(peso, raio);
@@ -21,7 +27,6 @@ class CalculadoraCCCTest {
 	
 	@Test
 	public void testaResultadoLitio() {
-		elemento = new CalculadoraCCC("Lítio");
 		peso = 6.94;
 		raio = 0.152;
 		elemento.calcula(peso, raio);
@@ -30,7 +35,6 @@ class CalculadoraCCCTest {
 	
 	@Test
 	public void testaResultadoTungstenio() {
-		elemento = new CalculadoraCCC("Tungstênio");
 		peso = 183.84;
 		raio = 0.137;
 		elemento.calcula(peso, raio);
