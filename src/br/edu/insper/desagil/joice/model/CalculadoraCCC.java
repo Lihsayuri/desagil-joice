@@ -18,7 +18,6 @@ public class CalculadoraCCC extends Calculadora{
 
 		densidade = massa/ volume;
 	
-		
 		return densidade;
 	}
 
