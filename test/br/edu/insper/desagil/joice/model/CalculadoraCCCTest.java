@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CalculadoraCCCTest {
-	private Calculadora elemento;
+	private CalculadoraCCC elemento;
 	private double peso;
 	private double raio;
 	private static double DELTA = 0.05;
